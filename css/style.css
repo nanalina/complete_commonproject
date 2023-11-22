@@ -1,0 +1,334 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: #483221;
+    padding: 25px;
+    text-shadow: 5px 10px 10px #fff8e7;
+}
+
+.recipe-header{
+    background-image: url('../images/recipe-header.jpeg');
+}
+
+.travel-header{
+    background-image: url('../images/travel-header.jpeg');
+}
+
+.pets-header{
+    background-image: url('../images/pets-header.jpg');
+}
+
+nav{
+    border: 2px solid #483221;
+    background-color: #cfb095;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff8e7;
+    min-width: 160px;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #cfb095;
+}
+
+#skip{
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 15px;
+    position: absolute;
+    margin-left: -300px;
+}
+
+#skip:focus{
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+h2{
+    font-size: 25px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #483221;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 20px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #483221;
+    font-weight: 400;
+}
+
+body{
+    background-color: #fff8e7;
+    font-size: 16px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span{
+    display: block;
+}
+
+.description p{
+    padding: 20px;
+}
+
+li{ 
+    height: 40%;
+}
+
+div{
+    line-height: 1.5;
+    padding: 15px;
+}
+
+img{
+    border: solid 3px #483221;
+    padding: 8px;
+    margin: 5px;
+    width: 100%;
+}
+
+img:hover{
+    transform: scale(1.03);
+    transition: 0.4s ease;
+}
+
+.current{
+    background-color: #483221;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.recipe_photogallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.pets_photogallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.travel_photogallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.recipe_photogallery img{
+    display: inline;
+    animation: fade-in 2s ease-in;
+}
+
+.pets_photogallery img{
+    display: inline;
+    animation: fade-in 2s ease-in;
+}
+
+.travel_photogallery img{
+    display: inline;
+    animation: fade-in 2s ease-in;
+}
+
+button{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Montserrat, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background: #483221;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #fff8e7;
+    display: block;
+    margin: 0 auto;
+}
+  
+button:hover {
+    background: #cfb095 ;
+    text-decoration: none;
+}
+
+i{
+    padding: 30px;
+}
+
+.fa-envelope{
+    color: #483221;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media (prefers-reduced-motion: reduce) {
+    .recipe_photogallery img {
+        animation: none; 
+    }
+
+    .pets_photogallery img{
+        animation: none;
+    }
+
+    .travel_photogallery img{
+        animation: none;
+    }
+
+    .gif {
+        display: none; 
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    img{
+        width: 80%;
+    }
+
+    h1{
+        padding: 50px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    body{
+        font-size: 20px;
+    }
+
+    .recipe_photogallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+    .pets_photogallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+    .travel_photogallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    h1{
+        padding: 80px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    body{
+        font-size: 22px;
+    }
+
+    img{
+        width: 40%;
+    }
+
+    .description{
+        display: flex;
+        align-items: center;
+    }
+
+    .recipe_photogallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+    }
+
+    .recipe_photogallery img{
+        width: 70%;
+    }
+    
+    .pets_photogallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+    .pets_photogallery img{
+        width: 70%;
+    }
+
+    .travel_photogallery{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+    }
+
+    .travel_photogallery img{
+        width: 70%;
+    }
+}
